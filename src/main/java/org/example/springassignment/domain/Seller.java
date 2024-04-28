@@ -8,7 +8,7 @@ import lombok.*;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Seller {@Id
+public class Seller extends BaseEntity {@Id
     private String sID;//점장 ID
     private String sName;//점장 이름
     private String sPW;//점장 PW

@@ -11,9 +11,11 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @AllArgsConstructor
 @NoArgsConstructor
 @EntityListeners(AuditingEntityListener.class)
-public class Shop {@Id
-    private String shopId;//매장 ID
+public class Shop extends BaseEntity{@Id
+    private Long shopId;//매장 ID
+    private Long phoneNumber;//매장 전화 번호
     private String shopName;//매장 이름
+
     private String shopPosition;//상점 위치
     private String shopDetail;//상점 설명
     private String menu1;//메뉴1

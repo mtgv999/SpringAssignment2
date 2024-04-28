@@ -1,4 +1,4 @@
-package org.example.springassignment.signup;
+package org.example.springassignment.requestnResponse;
 import lombok.Getter;
 import lombok.Setter;
 public class CreateSeller {
