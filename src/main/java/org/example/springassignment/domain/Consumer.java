@@ -2,7 +2,6 @@ package org.example.springassignment.domain;
 import jakarta.persistence.*;
 import lombok.*;
 import org.example.springassignment.register.ConsumerRegister;
-import org.example.springassignment.requestnResponse.CreateConsumer;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @Builder
 @Setter
@@ -11,7 +10,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @AllArgsConstructor
 @NoArgsConstructor
 @EntityListeners(AuditingEntityListener.class)
-public class Consumer extends BaseEntity { @Id
+public class Consumer extends BaseEntity { @Id//소비자
 @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long cID;//소비자 아이디
     private Long cNumber;//소비자 번호
@@ -21,9 +20,9 @@ public class Consumer extends BaseEntity { @Id
     private String used;//소비자의 사용 여부(리뷰 사용 위한)
     private String review;//소비자의 리뷰
 
-    public void cChange(CreateConsumer.Response cCResponse) {
-        this.cName =cCResponse.getCName();
-        this.cPW = cCResponse.getCPW();
-        this.cPhoneNumber = cCResponse.getCPhoneNumber();
-        this.used = cCResponse.getUsed();
-        this.review = cCResponse.getReview();}}//[2][3]
+    public void cChange(ConsumerRegister cRegister) {
+        this.cName =cRegister.getCName();
+        this.cPW = cRegister.getCPW();
+        this.cPhoneNumber = cRegister.getCPhoneNumber();
+        this.used = cRegister.getUsed();
+        this.review = cRegister.getReview();}}//[2][3]

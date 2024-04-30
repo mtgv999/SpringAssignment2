@@ -6,7 +6,7 @@ import lombok.*;
 import org.example.springassignment.domain.BaseEntity;
 import org.example.springassignment.register.ConsumerRegister;
 
-public class CreateConsumer {
+public class MakeConsumerAccount {
     @Getter
     @Setter
     public static class Request{
@@ -19,7 +19,6 @@ public class CreateConsumer {
     @AllArgsConstructor
     public static class Response extends BaseEntity {@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Long cID;//소비자 ID
         private Long cNumber;//소비자 번호
         private String cName;//소비자 이름
         private Long cPW;//소비자 비밀번호
@@ -29,7 +28,6 @@ public class CreateConsumer {
 
         public static Response cForm(ConsumerRegister cRegister){
             return Response.builder()
-                    .cID(cRegister.getCID())
                     .cNumber(cRegister.getCNumber())
                     .cName(cRegister.getCName())
                     .cPW(cRegister.getCPW())
