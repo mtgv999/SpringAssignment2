@@ -6,10 +6,10 @@ import lombok.*;
 import org.example.springassignment.domain.BaseEntity;
 import org.example.springassignment.register.ConsumerRegister;
 
-public class MakeConsumerAccount {
+public class MakeConsumerAccount {//소비자 계정 생성(만들기)
     @Getter
     @Setter
-    public static class Request{
+    public static class Request{//생성 요청
         private Long cID;//소비자 ID
     }
     @Getter
@@ -17,7 +17,7 @@ public class MakeConsumerAccount {
     @Setter
     @NoArgsConstructor
     @AllArgsConstructor
-    public static class Response extends BaseEntity {@Id
+    public static class Response extends BaseEntity {@Id//생성 결과
     @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long cNumber;//소비자 번호
         private String cName;//소비자 이름
@@ -25,11 +25,12 @@ public class MakeConsumerAccount {
         private Long cPhoneNumber;//소비자 전화번호
         private String used;//소비자의 사용 여부(리뷰 사용 위한)
         private String review;//소비자의 리뷰
+    }}//[2][3][4]
 
-        public static Response cForm(ConsumerRegister cRegister){
+        /* public static Response cForm(ConsumerRegister cRegister){
             return Response.builder()
                     .cNumber(cRegister.getCNumber())
                     .cName(cRegister.getCName())
                     .cPW(cRegister.getCPW())
                     .used(cRegister.getUsed())
-            .review(cRegister.getReview()).build();}}}//[2][3][4]
+            .review(cRegister.getReview()).build();}}}//[2][3][4]*/

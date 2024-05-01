@@ -17,4 +17,4 @@ public class SellerRegister{//판매자(점장) 등록
                 .sNumber(sRegister.getSNumber())
                 .sName(sRegister.getSName())
                 .sPW(sRegister.getSPW())
-                .sPhoneNumber(sRegister.getSPhoneNumber()).build();}}
+.sPhoneNumber(sRegister.getSPhoneNumber()).build();}}

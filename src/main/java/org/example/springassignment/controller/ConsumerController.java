@@ -3,17 +3,16 @@ import lombok.RequiredArgsConstructor;
 import org.example.springassignment.domain.Consumer;
 import org.example.springassignment.login.ConsumerLoginRequest;
 import org.example.springassignment.register.ConsumerRegister;
-import org.example.springassignment.requestnResponse.MakeConsumerAccount;
 import org.example.springassignment.service.ConsumerService;
 import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/consumer")
 @RequiredArgsConstructor
+
 public class ConsumerController {
     private final ConsumerService consumerService;
-    @PostMapping("/create")//소비자 계정 만듬.
-    public Consumer makeConsumer
-            (@RequestBody ConsumerRegister cRegister){
+    @PostMapping("/make")//소비자 계정 만듬.
+    public Consumer makeConsumer(@RequestBody ConsumerRegister cRegister){
 return consumerService.makeConsumer(cRegister);}
 
     @GetMapping("/get/{cID}")//소비자 정보 가져옴.
