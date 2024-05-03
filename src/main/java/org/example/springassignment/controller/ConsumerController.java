@@ -43,5 +43,4 @@ public String cLogin(@RequestBody ConsumerLoginRequest cLReq){
     //@DeleteMapping("delete/{cID}/review")//리뷰 삭제
     //public void deleteReview(@PathVariable String review){
     //    consumerService.deleteReview(review);}
-
 }

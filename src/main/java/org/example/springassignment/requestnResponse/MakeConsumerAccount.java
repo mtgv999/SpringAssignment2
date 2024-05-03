@@ -4,7 +4,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
 import org.example.springassignment.domain.BaseEntity;
-import org.example.springassignment.register.ConsumerRegister;
 
 public class MakeConsumerAccount {//소비자 계정 생성(만들기)
     @Getter
@@ -17,7 +16,7 @@ public class MakeConsumerAccount {//소비자 계정 생성(만들기)
     @Setter
     @NoArgsConstructor
     @AllArgsConstructor
-    public static class Response extends BaseEntity {@Id//생성 결과
+    public static class Response extends BaseEntity{@Id//생성 결과
     @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long cNumber;//소비자 번호
         private String cName;//소비자 이름

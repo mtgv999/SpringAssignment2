@@ -26,7 +26,7 @@ public class SellerService {
         sellerRepository.deleteBysID(sID);}
 
     public String sLogin(SellerLoginRequest sLReq){
-        Seller reqSe=sellerRepository.findBySName(sLReq.getSName());
+        Seller reqSe=sellerRepository.findBysName(sLReq.getSName());
+        String s="";//점장 인지 아닌지 여부
         if(reqSe.getSPW().longValue()==sLReq.getSPW())
-            return "Success!";else return "Fail!";}
-}
+            s="Success!";else s="Fail!"; return s;}}

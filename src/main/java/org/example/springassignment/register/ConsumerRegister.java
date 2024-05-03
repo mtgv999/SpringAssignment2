@@ -6,13 +6,14 @@ import org.example.springassignment.domain.Consumer;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ConsumerRegister{//소비자 등록
+public class ConsumerRegister {//소비자 등록
     private Long cNumber;//소비자 번호
     private String cName;//소비자 이름
     private Long cPW;//소비자 비밀번호
     private Long cPhoneNumber;//소비자 전화번호
     private String used;
     private String review;
+
     public static Consumer cForm(ConsumerRegister cRegister){
         return Consumer.builder()
                 .cNumber(cRegister.getCNumber())

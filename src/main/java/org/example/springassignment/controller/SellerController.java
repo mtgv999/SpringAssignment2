@@ -20,9 +20,9 @@ public class SellerController {
     public Seller getSeller(@PathVariable Long sID){
         return sellerService.getSeller(sID);}
 
-    @PutMapping("/change/{cID}")//소비자 정보 수정
+    @PutMapping("/change/{sID}")//소비자 정보 수정
     public Seller changeSeller(@PathVariable Long sID,
-        @RequestBody SellerRegister sRegister){
+                               @RequestBody SellerRegister sRegister){
         return sellerService.changeSeller(sID,sRegister);}
 
     @DeleteMapping("/delete/{sID}")//점장 계정 삭제

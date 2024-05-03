@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SellerLoginRequest {
+public class SellerLoginRequest {//점장 로그인 확인 요청
     @JsonProperty
     private String sName;
     @JsonProperty
