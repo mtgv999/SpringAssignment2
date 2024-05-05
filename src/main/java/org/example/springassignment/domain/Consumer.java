@@ -28,12 +28,17 @@ public class Consumer extends BaseEntity { @Id//소비자
         this.cPW = cRegister.getCPW();
         this.cPhoneNumber = cRegister.getCPhoneNumber();}//[2][3]
 
-    /*public void cChange2(ConsumerRegister cRegister2){//예약 여부
-        this.makeReservation=cRegister2.getMakeReservation();}*/
+    public void cChange2(ConsumerRegister cRegister2){//예약 여부
+        this.makeReservation=cRegister2.getMakeReservation();}
 
-    /* public void cChange3(ConsumerRegister cRegister3){//매장 사용 여부
-        this.used = cRegister3.getUsed();}
+    public void cChange3(ConsumerRegister cRegister3){//매장 사용 여부
+        this.used = "yes";}
 
-    public void cChange4(ConsumerRegister cRegister4){//리뷰 수정 관련
-        this.review = cRegister4.getReview();}*/
+    public void cChange4(ConsumerRegister cRegister4){
+        //리뷰 사용할 수 있게 함.(매장 사용 후)
+        this.review = "yes";}
+    public void cChange5(ConsumerRegister cRegister5){//리뷰 수정.
+        this.review=cRegister5.getReview();}
+    public void cChange6(ConsumerRegister cRegister6) {//리뷰 삭제
+        this.used="no";}
 }

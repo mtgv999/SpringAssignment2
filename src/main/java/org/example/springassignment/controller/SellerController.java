@@ -22,7 +22,7 @@ public class SellerController {
 
     @PutMapping("/change/{sID}")//소비자 정보 수정
     public Seller changeSeller(@PathVariable Long sID,
-                               @RequestBody SellerRegister sRegister){
+    @RequestBody SellerRegister sRegister){
         return sellerService.changeSeller(sID,sRegister);}
 
     @DeleteMapping("/delete/{sID}")//점장 계정 삭제
@@ -33,4 +33,9 @@ public class SellerController {
     // 했는지의 여부를 로그인을 통해 확인하려는 요청
     public String sLogin(@RequestBody SellerLoginRequest sLReq){
         return sellerService.sLogin(sLReq);}
+
+    @DeleteMapping("delete/{cID}/review")//리뷰 삭제
+    public void sDeleteReview(@RequestBody SellerLoginRequest sLReq2,
+                              @PathVariable Long cID){
+        sellerService.sDeleteReview(sLReq2,cID);}
 }

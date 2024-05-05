@@ -19,14 +19,19 @@ public class SellerService {
         return sellerRepository.findBysID(sID);}
 
     public Seller changeSeller(Long sID, SellerRegister sRegister) {
-        Seller saved=sellerRepository.findBysID(sID);
+        Seller saved = sellerRepository.findBysID(sID);
         saved.sChange(sRegister);return saved;}
 
-    public void deleteSeller(Long sID){
+    public void deleteSeller(Long sID) {
         sellerRepository.deleteBysID(sID);}
 
     public String sLogin(SellerLoginRequest sLReq){
-        Seller reqSe=sellerRepository.findBysName(sLReq.getSName());
-        String s="";//점장 인지 아닌지 여부
-        if(reqSe.getSPW().longValue()==sLReq.getSPW())
-            s="Success!";else s="Fail!"; return s;}}
+        Seller reqSe=sellerRepository.findBysID(sLReq.getSID());
+        if(reqSe.getSPW().longValue()==sLReq.getSPW())//점장 인지 아닌지 여부 확인
+        {return "Success!";}else return "Fail!";}
+
+    public void sDeleteReview(SellerLoginRequest sLReq2, Long sID){
+        Seller reqSe2=sellerRepository.findBysID(sLReq2.getSID());
+        if(reqSe2.getSPW().longValue()==sLReq2.getSPW())
+            sellerRepository.deleteBysID(sID);}
+}

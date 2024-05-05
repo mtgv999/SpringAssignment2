@@ -20,6 +20,7 @@ public class Seller extends BaseEntity {@Id//판매자(점장)
     private Long sPhoneNumber;//점장 전화번호
 
     public void sChange(SellerRegister sRegister){//점장 정보 수정 형식
+        this.sNumber=sRegister.getSNumber();
         this.sName=sRegister.getSName();
         this.sPW=sRegister.getSPW();
         this.sPhoneNumber=sRegister.getSPhoneNumber();}}

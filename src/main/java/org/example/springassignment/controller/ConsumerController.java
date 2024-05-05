@@ -30,13 +30,33 @@ public Consumer makeConsumer(@RequestBody ConsumerRegister cRegister){
         @PathVariable Long cID){
         consumerService.deleteConsumer(cLReq,cID);}
 
-    @PostMapping("/cLogin")
-        // 했는지의 여부를 로그인을 통해 확인하려는 요청
-    public String cLogin(@RequestBody ConsumerLoginRequest cLReq){
-            return consumerService.cLogin(cLReq);}
+    @PostMapping("/cLogin")// 소비자가 회원 가입을
+    // 했는지의 여부를 로그인을 통해 확인하려는 요청
+    public String cCLogin(@RequestBody ConsumerLoginRequest cLReq){
+        return consumerService.cCLogin(cLReq);}
 
-    /* @PutMapping("/reservation/{cID}")
-    public Consumer makeReservation(@PathVariable Long cID,
-   @RequestBody ConsumerRegister cRegister2) {//[5] 예약하기
-        return consumerService.makeReservation(cID,cRegister2);}*/
+    @PutMapping("/reservation/{cID}")
+    public Consumer cMakeReservation(@PathVariable Long cID,
+    @RequestBody ConsumerRegister cRegister2) {//[5] 예약하기
+        return consumerService.cMakeReservation(cID,cRegister2);}
+
+    @PutMapping("/used/{cID}")
+    public Consumer cCheckUsed(@PathVariable Long cID,
+    @RequestBody ConsumerRegister cRegister3) {//사용 여부 바꿈.
+        return consumerService.cCheckUsed(cID,cRegister3);}
+
+    @PutMapping("/make/review/{cID}")
+    public Consumer cMakeReview(@PathVariable Long cID,
+    @RequestBody ConsumerRegister cRegister4) {//리뷰 만들기
+        return consumerService.cMakeReview(cID,cRegister4);}
+
+    @PutMapping("/change/{cID}/review")//리뷰 수정
+    public Consumer cChangeReview(@PathVariable Long cID,
+    @RequestBody ConsumerRegister cRegister5){
+        return consumerService.cChangeReview(cID,cRegister5);}
+
+    @PutMapping("delete/{cID}/review")//리뷰 삭제
+    public Consumer cDeleteReview(@PathVariable Long cID,
+    @RequestBody ConsumerRegister cRegister6){
+        return consumerService.cDeleteReview(cID,cRegister6);}
     }

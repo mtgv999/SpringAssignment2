@@ -1,7 +1,4 @@
 package org.example.springassignment.register;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.*;
 import org.example.springassignment.domain.Consumer;
 @Getter
