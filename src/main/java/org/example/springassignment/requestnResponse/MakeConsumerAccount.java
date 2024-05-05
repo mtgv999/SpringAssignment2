@@ -9,7 +9,7 @@ public class MakeConsumerAccount {//소비자 계정 생성(만들기)
     @Getter
     @Setter
     public static class Request{//생성 요청
-        private Long cID;//소비자 ID
+        private Long cID;//예약 번호
     }
     @Getter
     @Builder
@@ -22,6 +22,8 @@ public class MakeConsumerAccount {//소비자 계정 생성(만들기)
         private String cName;//소비자 이름
         private Long cPW;//소비자 비밀번호
         private Long cPhoneNumber;//소비자 전화번호
+
+        private String makeReservation;//예약
         private String used;//소비자의 사용 여부(리뷰 사용 위한)
         private String review;//소비자의 리뷰
     }}//[2][3][4]

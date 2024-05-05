@@ -5,21 +5,19 @@ import jakarta.persistence.Id;
 import lombok.*;
 import org.example.springassignment.domain.BaseEntity;
 
-public class MakeSellerAccount {//점장(판매자) 계정 만들기
+public class MakeReview {//리뷰 생성(만들기)
     @Getter
     @Setter
-    public static class Request{
-        private Long sID;//점장(판매자)
+    public static class Request {//생성 요청
+        private Long rvNumber;//리뷰 번호
     }
     @Getter
     @Builder
     @Setter
     @NoArgsConstructor
     @AllArgsConstructor
-    public static class Response extends BaseEntity{@Id //생성 결과
+    public static class Response extends BaseEntity{@Id//생성 결과
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Long sNumber;//점장 번호
-        private String sName;//점장 이름
-        private Long sPW;//점장 PW
-        private Long sPhoneNumber;//점장 전화번호
+        private Long cID;//소비자 아이디
+        private String review;//리뷰 내용
     }}

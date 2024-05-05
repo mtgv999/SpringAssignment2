@@ -2,23 +2,30 @@ package org.example.springassignment.register;
 import lombok.*;
 import org.example.springassignment.domain.Shop;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Builder
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class ShopRegister {//상점 등록
-    private Long shopNumber;//매장 번호
-    private String shopName;//매장 이름
-    private Long shopPhoneNumber;//매장 전화 번호
-    private String shopPosition;//매장 위치
+    private Long shopNumber;//상점 번호
+    private String shopName;//상점 이름
+    private Long shopPhoneNumber;//상점 전화 번호
+    private String shopPosition;//상점 위치
 
-    private String shopDetail;//매장 설명
+    private String shopDetail;//상점 설명
     private String menu1;//메뉴1
     private String menu2;//메뉴2
-    private String menu3;//메뉴3
+    private String table1;//상점 내 테이블1
+    private String table2;//상점 내 테이블2
+    private LocalDateTime localDateTime1;//사용 가능 시간1
+    //private LocalDateTime localDateTime2;//사용 가능 시간2
+    private LocalDateTime arriveTime;//도착 시간
 
-    public static Shop shopForm(ShopRegister shopRegister){
+    public static Shop shopForm
+            (ShopRegister shopRegister){//상점 만드는 양식
         return Shop.builder()
                 .shopNumber(shopRegister.getShopNumber())
                 .shopName(shopRegister.getShopName())
@@ -28,4 +35,8 @@ public class ShopRegister {//상점 등록
                 .shopDetail(shopRegister.getShopDetail())
                 .menu1(shopRegister.getMenu1())
                 .menu2(shopRegister.getMenu2())
-                .menu3(shopRegister.getMenu3()).build();}}
+                .table1(shopRegister.getTable1())
+                .table2(shopRegister.getTable2())
+                .localDateTime1(shopRegister.getLocalDateTime1())
+                //.localDateTime2(shopRegister.getLocalDateTime2())
+                .arriveTime(shopRegister.getArriveTime()).build();}}

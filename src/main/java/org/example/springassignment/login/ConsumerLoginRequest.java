@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ConsumerLoginRequest {//소비자 로그인 확인 요청
     @JsonProperty
-    private String cName;
+    private Long cID;
     @JsonProperty
     private Long cPW;}

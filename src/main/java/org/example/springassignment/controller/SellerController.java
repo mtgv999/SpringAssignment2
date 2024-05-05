@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 public class SellerController {
     private final SellerService sellerService;
-    @PostMapping("/make")//점장(판매자) 계정 만듬.
+    @PostMapping("/make")//점장(판매자) 계정 만듬.(점장 회원 가입)
     public Seller makeSeller(@RequestBody SellerRegister sRegister){
         return sellerService.makeSeller(sRegister);}
 
