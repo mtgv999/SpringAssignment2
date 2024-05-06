@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @EntityListeners(AuditingEntityListener.class)
 public class BaseEntity {
     @CreatedDate
-    private LocalDateTime madeAt=LocalDateTime.now();//생성 날짜
+    private LocalDateTime madeAt=LocalDateTime.now();//생성 시간
     @LastModifiedDate
-    private LocalDateTime changedAt=LocalDateTime.now();//바뀐 날짜
+    private LocalDateTime changedAt=LocalDateTime.now();//바뀐 시간
 }//[3][4]
