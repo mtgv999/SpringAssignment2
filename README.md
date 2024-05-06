@@ -25,8 +25,7 @@ Spring Web, Spring Data JPA, H2 Database, Lombok, Validation
 ### 기술 스택
 Java, Spring, H2 Database
 ### ERD
-[3]
-
+[3] <img width="850" alt="스크린샷 2024-05-06 오후 9 05 59" src="https://github.com/mtgv999/SpringAssignment2/assets/149506393/8ab314b6-e318-415a-ab10-b3bfa2a334c7">
 ### 출처
 [1] 미상, 제로베이스 - Part3._예제를 통해 학습하는 스프링(Java)_Chapter 01.사전 준비.pdf, “의존성”, 미상, 미상
 [2] 계란, 티스토리, “Chapter8. Account(게좌) 시스템 개발”, https://oranthy.tistory.com/270, 2022.8.2([4]의 Consu mer 클래스의 Controller, Domain, dto, repository, service 등)
