@@ -25,4 +25,4 @@ Spring Web, Spring Data JPA, H2 Database, Lombok, Validation
 ### 기술 스택
 Java, Spring, H2 Database
 ### ERD
-[3] ![](/Users/mgcztech/Desktop/스크린샷 2024-05-06 오후 9.05.59.png)
+[3]
