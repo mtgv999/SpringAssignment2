@@ -1,4 +1,4 @@
-package org.example.springassignment.login;
+package org.example.springassignment.loginorcheck;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

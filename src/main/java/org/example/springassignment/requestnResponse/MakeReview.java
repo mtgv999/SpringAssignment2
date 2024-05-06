@@ -10,6 +10,7 @@ public class MakeReview {//리뷰 생성(만들기)
     @Setter
     public static class Request {//생성 요청
         private Long rvNumber;//리뷰 번호
+
     }
     @Getter
     @Builder
@@ -19,5 +20,6 @@ public class MakeReview {//리뷰 생성(만들기)
     public static class Response extends BaseEntity{@Id//생성 결과
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long cID;//소비자 아이디
+        private Long sID;//점장 아이디
         private String review;//리뷰 내용
     }}

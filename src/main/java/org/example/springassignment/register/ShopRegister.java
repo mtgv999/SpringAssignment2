@@ -20,8 +20,7 @@ public class ShopRegister {//상점 등록
     private String table1;//상점 내 테이블1
     private String table2;//상점 내 테이블2
     private LocalDateTime localDateTime1;//사용 가능 시간1
-    private LocalDateTime localDateTime2;//사용 가능 시간2
-    private LocalDateTime arriveTime;//도착 시간
+    //private LocalDateTime localDateTime2;//사용 가능 시간2
 
     public static Shop shopForm
             (ShopRegister shopRegister){//상점 만드는 양식
@@ -37,6 +36,4 @@ public class ShopRegister {//상점 등록
                 .menu2(shopRegister.getMenu2())
                 .table1(shopRegister.getTable1())
                 .table2(shopRegister.getTable2())
-                .localDateTime1(shopRegister.getLocalDateTime1())
-                .localDateTime2(shopRegister.getLocalDateTime2())
-                .arriveTime(shopRegister.getArriveTime()).build();}}
+.localDateTime1(shopRegister.getLocalDateTime1()).build();}}

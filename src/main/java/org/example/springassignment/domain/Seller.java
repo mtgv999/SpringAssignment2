@@ -13,7 +13,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @EntityListeners(AuditingEntityListener.class)
 public class Seller extends BaseEntity {@Id//판매자(점장)
 @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long sID;//점장 ID
+    private Long sID;//점장 아이디
     private Long sNumber;//점장 번호
     private String sName;//점장 이름
     private Long sPW;//점장 PW

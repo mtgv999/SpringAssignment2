@@ -18,5 +18,4 @@ public class Review extends BaseEntity{@Id//리뷰
     private String review;//리뷰 내용
 
     public void rvChange(ReviewRegister rvRegister){//리뷰 정보 수정 형식
-        this.review=rvRegister.getReview();}
-}
+        this.review=rvRegister.getReview();}}
