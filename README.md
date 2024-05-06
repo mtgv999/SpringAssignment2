@@ -20,9 +20,9 @@
 점장의 ID, PW를 집어 넣음으로써 로그인 가능한 지의 여부를 확인할 수 있음. [2][3][4]
 
 ### build.gradle
-Spring Web, Spring Data JPA, H2 Database, Lombok, Validation
+Spring Web, Spring Data JPA, H2 Database, Lombok, Validation [2][3][4]
 ### 기술 스택
-Java, Spring, H2 Database
+Java, Spring, H2 Database [2][3][4]
 ### ERD
 <img width="850" alt="스크린샷 2024-05-06 오후 9 05 59" src="https://github.com/mtgv999/SpringAssignment2/assets/149506393/8ab314b6-e318-415a-ab10-b3bfa2a334c7"> [3]
 
