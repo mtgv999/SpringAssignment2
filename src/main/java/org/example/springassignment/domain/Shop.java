@@ -27,7 +27,7 @@ public class Shop extends BaseEntity{@Id//상점
     private String table1;//상점 내 테이블1
     private String table2;//상점 내 테이블2
     private LocalDateTime localDateTime1;//사용 가능 시간1
-    //private LocalDateTime localDateTime2;//사용 가능 시간2
+    private LocalDateTime localDateTime2;//사용 가능 시간2
     private LocalDateTime arriveTime;//도착 시간
 
     public void shopChange(ShopRegister shopRegister){//상점 정보 수정 양식
@@ -43,5 +43,6 @@ public class Shop extends BaseEntity{@Id//상점
         this.table1=shopRegister.getTable1();
         this.table2=shopRegister.getTable2();
         this.localDateTime1=shopRegister.getLocalDateTime1();
-        //this.localDateTime2=shopRegister.getLocalDateTime2();
+        this.localDateTime2=shopRegister.getLocalDateTime2();
+        this.arriveTime=shopRegister.getArriveTime();
     }}

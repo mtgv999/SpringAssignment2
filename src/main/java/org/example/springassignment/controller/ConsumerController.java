@@ -13,7 +13,8 @@ public class ConsumerController {//소비자
     private final ConsumerService consumerService;
 
     @PostMapping("/make")//소비자 계정 만듬.(소비자 회원 가입)
-    //계정 만들 때 makeReservation, used, review="no"로 설정 부탁
+//계정 만들 때 makeReservation, used,
+// review="no" 또는 아무 것도 적지 않을 것을 설정 부탁
 public Consumer makeConsumer(@RequestBody ConsumerRegister cRegister){
     return consumerService.makeConsumer(cRegister);}
 

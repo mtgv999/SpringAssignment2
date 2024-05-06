@@ -18,21 +18,20 @@ public class ReservationController2 {
     public String cLogin(@RequestBody ConsumerLoginRequest cLReq){
         return reservationService.cLogin(cLReq);}
 
-    @PostMapping("/make")//리뷰 만듬.
+    @PostMapping("/make")//예약 만듬.
 public Reservation2 makeReservation
             (@RequestBody ReservationRegister2 rsRegister){
         return reservationService.makeReservation(rsRegister);}
 
-    @GetMapping("/get/{rsNumber}")//리뷰 정보 가져옴.
+    @GetMapping("/get/{rsNumber}")//예약 정보 가져옴.
     public Reservation2 getReservation(@PathVariable Long rsNumber){
         return reservationService.getReservation(rsNumber);}
 
-    @PutMapping("/change/{rsNumber}")//리뷰 수정
+    @PutMapping("/change/{rsNumber}")//예약 수정
     public Reservation2 changeReservation(@PathVariable Long rsNumber,
     @RequestBody ReservationRegister2 rsRegister){
         return reservationService.changeReservation(rsNumber,rsRegister);}
 
-    @DeleteMapping("delete/{rsNumber}")//리뷰 삭제
+    @DeleteMapping("delete/{rsNumber}")//예약 삭제
     public void deleteReservation(@PathVariable Long rsNumber){
-        reservationService.deleteReservation(rsNumber);}
-}
+        reservationService.deleteReservation(rsNumber);}}

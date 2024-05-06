@@ -25,8 +25,7 @@ public class MakeReservation2 {//예약 생성(만들기)
         private Long cPhoneNumber;//소비자 전화번호
 
         //private Long rsDate;//예약 날짜
-        private LocalDateTime rsTime;//예약 시간
-        private LocalDateTime
+        private LocalDateTime rsTime;//예약 날짜+시간
         private String menu;//예약 메뉴
         private String tables;//예약 테이블
     }}

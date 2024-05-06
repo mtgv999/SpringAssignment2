@@ -15,10 +15,9 @@ public class ReservationRegister2 {//예약 등록
     private Long cPhoneNumber;//소비자 전화번호
 
     //private Long rsDate;
-    private LocalDateTime rsTime;
-    private LocalDateTime arriveTime=LocalDateTime.now();//도착 시간
-    private String menu;
-    private String tables;
+    private LocalDateTime rsTime;//예약 날짜+시간[6]
+    private String menu;//예약 메뉴
+    private String tables;//예약 테이블
 
     public static Reservation2 rsForm
             (ReservationRegister2 rsRegister){
@@ -29,6 +28,5 @@ public class ReservationRegister2 {//예약 등록
 
                 //.rsDate(rsRegister.getRsDate())
                 .rsTime(rsRegister.getRsTime())
-                .arriveTime(rsRegister.getRsTime())
                 .menu(rsRegister.getMenu())
                 .tables(rsRegister.getTables()).build();}}
