@@ -26,8 +26,6 @@ Java, Spring, H2 Database
 ### ERD
  [3] <img width="850" alt="스크린샷 2024-05-06 오후 9 05 59" src="https://github.com/mtgv999/SpringAssignment2/assets/149506393/8ab314b6-e318-415a-ab10-b3bfa2a334c7">
 
-<img width="254" alt="스크린샷 2024-05-06 오후 9 01 33" src="https://github.com/mtgv999/SpringAssignment2/assets/149506393/e3e0b611-61ba-4d89-8166-61d8df81ad51">
-
 ### 출처
 [1] 미상, 제로베이스 - Part3._예제를 통해 학습하는 스프링(Java)_Chapter 01.사전 준비.pdf, “의존성”, 미상, 미상
 
