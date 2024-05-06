@@ -33,7 +33,7 @@ Java, Spring, H2 Database
 (참조키(FORIEGN KEY))은 검은 점으로 표시하였다.
 Review 테이블, Reservation2 테이블의 cID은 cPW, cID를 참조한다.
 Shop, Review 테이블의 sID는 sPW, sID를 참조한다.
-하늘 색 선은 참조하는 칼럼과 참조하는 칼럼을 이어주는 선이다.[10]
+하늘 색 선은 참조받는 칼럼과 참조하는 칼럼을 이어주는 선이다.[10]
 ### 출처
 [1] 미상, 제로베이스 - Part3._예제를 통해 학습하는 스프링(Java)_Chapter 01.사전 준비.pdf, “의존성”, 미상, 미상
 
